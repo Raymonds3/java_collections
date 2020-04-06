@@ -28,11 +28,11 @@ public class JavaCollections {
                     System.out.print(arrayToInt[i] + " ");
                 }
                 System.out.println("   " + x);
-                if (highestUniquesNumber <= x) {
+                if (!(highestUniquesNumber > x)) {
                     highestUniquesNumber = x;
                 }
             }
-            if (dequeList.poll() == null) {
+            if (!(dequeList.poll() != null)) {
                 break;
             }
         }
